@@ -1,0 +1,71 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/BUE/Semester 2 Year 2/Digital Electronics/Project/DE_Temperature
+vADC
+!s110 1650923568
+!i10b 1
+!s100 _ZeC>2BQc28XdkfZYDZ?80
+I[k^<<^6jgfn@]P=d8FKYC0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1650923565
+8ADC.v
+FADC.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1650923567.000000
+!s107 ADC.v|
+!s90 ADC.v|
+!i113 1
+Z3 tCvgOpt 0
+n@a@d@c
+vdemux2_1
+!s110 1650916486
+!i10b 1
+!s100 NYVz2b]BM5Akd?Z]=2:f[1
+Il10X2Z_LN3:ZQM4Q36iBX3
+R1
+R0
+w1650916478
+8leddemux.v
+Fleddemux.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1650916486.000000
+!s107 leddemux.v|
+!s90 leddemux.v|
+!i113 1
+R3
+vtemp
+!s110 1650914372
+!i10b 1
+!s100 iG_U?4cKPO``lWYDAd>g11
+IjO<Bef4zoSb0IhRb:K`1]2
+R1
+R0
+w1650914371
+8temp.v
+Ftemp.v
+L0 17
+R2
+r1
+!s85 0
+31
+!s108 1650914372.000000
+!s107 temp.v|
+!s90 temp.v|
+!i113 1
+R3

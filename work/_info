@@ -49,6 +49,26 @@ r1
 !s90 leddemux.v|
 !i113 1
 R3
+vlcd_state
+!s110 1650951771
+!i10b 1
+!s100 K9TecDVzzPDMYKEd?A;T73
+I<iIKO]a:BR_<z<>PzfaWY3
+R1
+R0
+w1650951769
+8LCD_state.v
+FLCD_state.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1650951771.000000
+!s107 LCD_state.v|
+!s90 LCD_state.v|
+!i113 1
+R3
 vtemp
 !s110 1650914372
 !i10b 1

@@ -1,11 +1,11 @@
 module ADC(clk,cs,din,led,count,doutb,en,den,rstc1,rstc2);
-input clk;
+output clk;
 output cs;
 output reg  din;
 //input donull,
 //input dobit;
 reg  [9:0] dout;
-output [1:0] led;
+output reg led;
 output [3:0] count;
 reg [3:0] count_temp;
 reg [3:0] count_temp2;
@@ -56,10 +56,12 @@ always @(negedge clk) begin
             else
                 begin
                     if(dout>10'b0000100101)
-                        demux2_1(1'b1, 1'b1,  led[0],led[1]);
+                        led = 1'b1;
                      else
-                        
-                        demux2_1(1'b0, 1'b1,  led[0],led[1]);
+                     begin
+                        led = 1'b0;
+                        end
+                        //demux2_1(1'b0, 1'b1,  led[0],led[1]);
                 end
 end
 end

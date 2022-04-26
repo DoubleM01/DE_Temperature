@@ -1,1 +1,4 @@
-module lcd();
+module lcd(
+    clk,
+    e
+);

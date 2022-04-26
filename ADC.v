@@ -1,12 +1,12 @@
-module ADC(clk,cs,din,led,count,doutb,en,den,rstc1,rstc2);
-output clk;
+module ADC(clk,cs,din,led,doutb,en,den,rstc1,rstc2);
+wire clk;
 output cs;
 output reg  din;
 //input donull,
 //input dobit;
-reg  [9:0] dout;
+reg  [7:0] dout;
 output reg led;
-output [3:0] count;
+//output [3:0] count;
 reg [3:0] count_temp;
 reg [3:0] count_temp2;
 input doutb;
@@ -14,8 +14,8 @@ output reg en;
 output reg den;
 input rstc1;
 input rstc2;
-reg high;
-wire [1:0]y;
+//reg high;
+//wire [1:0]y;
 
 assign cs= 1'b0;
 //assign dout <= 0;
@@ -51,11 +51,11 @@ always @(negedge clk) begin
                     count_temp2 <= count_temp2 - 1;
                 end
 
-            if(count_temp2 != 4'b1001)
+            if(count_temp2 != 4'b0111)
                 dout[count_temp2-1] <=  doutb;
             else
                 begin
-                    if(dout>10'b0000100101)
+                    if(dout>10'b00000111)
                         led = 1'b1;
                      else
                      begin

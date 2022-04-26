@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dE:/BUE/Semester 2 Year 2/Digital Electronics/Project/DE_Temperature
 vADC
-!s110 1650943443
+!s110 1650953948
 !i10b 1
-!s100 cDz0:1ECVBI1H067]<8j:0
-IF:I7PVYY1zcCQ9?Xl[A2W3
+!s100 dYjT0RW>6^N15@WRKK:B<0
+I7^z5D356T=:S58MkP3>:G2
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1650943101
+w1650953945
 8ADC.v
 FADC.v
 L0 1
@@ -23,7 +23,7 @@ Z2 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1650943443.000000
+!s108 1650953948.000000
 !s107 ADC.v|
 !s90 ADC.v|
 !i113 1
@@ -50,7 +50,7 @@ r1
 !i113 1
 R3
 vlcd_state
-!s110 1650951771
+!s110 1650952944
 !i10b 1
 !s100 K9TecDVzzPDMYKEd?A;T73
 I<iIKO]a:BR_<z<>PzfaWY3
@@ -64,9 +64,29 @@ R2
 r1
 !s85 0
 31
-!s108 1650951771.000000
+!s108 1650952944.000000
 !s107 LCD_state.v|
 !s90 LCD_state.v|
+!i113 1
+R3
+vlcd_testbench
+!s110 1650953040
+!i10b 1
+!s100 ^FmFRa0Kgm`M=N0b06m9F1
+IRTf>]nTS7Gj^AO>M_WJ9h1
+R1
+R0
+w1650953036
+8lcd_testbench.v
+Flcd_testbench.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1650953040.000000
+!s107 lcd_testbench.v|
+!s90 lcd_testbench.v|
 !i113 1
 R3
 vtemp

@@ -1,0 +1,16 @@
+# vsim work.lcd_testbench 
+# Start time: 08:04:12 on Apr 26,2022
+# Loading work.lcd_testbench
+# Loading work.lcd_state
+# ** Warning: (vsim-3015) lcd_testbench.v(13): [PCDPC] - Port size (8) does not match connection size (1) for port 'value'. The port definition is at: LCD_state.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /lcd_testbench/i4 File: LCD_state.v
+add wave  \
+sim:/lcd_testbench/clk \
+sim:/lcd_testbench/rst \
+sim:/lcd_testbench/rs \
+sim:/lcd_testbench/rw \
+sim:/lcd_testbench/en \
+sim:/lcd_testbench/data \
+sim:/lcd_testbench/value
+# End time: 08:05:35 on Apr 26,2022, Elapsed time: 0:01:23
+# Errors: 0, Warnings: 1

@@ -2,6 +2,7 @@ module ADC(clk,cs,din,led,doutb,en,den,rstc1,rstc2);
 wire clk;
 output cs;
 output reg  din;
+output reg sclk;
 //input donull,
 //input dobit;
 reg  [7:0] dout;
@@ -19,7 +20,7 @@ input rstc2;
 
 assign cs= 1'b0;
 //assign dout <= 0;
-always@(clk) begin
+always@(clk, sclk) begin
 //assign cs= 1'b0;
     if(rstc1)
         count_temp = 4'b0;

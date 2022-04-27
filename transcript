@@ -1,16 +1,32 @@
-# vsim work.lcd_testbench 
-# Start time: 08:04:12 on Apr 26,2022
-# Loading work.lcd_testbench
+# vsim temp_tb 
+# Start time: 16:42:32 on Apr 26,2022
+# Loading work.temp_tb
+# Loading work.temp
+# Loading work.MCP
+# Loading work.leddemux
 # Loading work.lcd_state
-# ** Warning: (vsim-3015) lcd_testbench.v(13): [PCDPC] - Port size (8) does not match connection size (1) for port 'value'. The port definition is at: LCD_state.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /lcd_testbench/i4 File: LCD_state.v
 add wave  \
-sim:/lcd_testbench/clk \
-sim:/lcd_testbench/rst \
-sim:/lcd_testbench/rs \
-sim:/lcd_testbench/rw \
-sim:/lcd_testbench/en \
-sim:/lcd_testbench/data \
-sim:/lcd_testbench/value
-# End time: 08:05:35 on Apr 26,2022, Elapsed time: 0:01:23
-# Errors: 0, Warnings: 1
+sim:/temp_tb/clk \
+sim:/temp_tb/rst \
+sim:/temp_tb/led \
+sim:/temp_tb/r \
+sim:/temp_tb/g \
+sim:/temp_tb/dataout \
+sim:/temp_tb/cs \
+sim:/temp_tb/din \
+sim:/temp_tb/sclk \
+sim:/temp_tb/rs \
+sim:/temp_tb/rw \
+sim:/temp_tb/en
+force -freeze sim:/temp_tb/dataout 00100011 0
+run 100
+force -freeze sim:/temp_tb/dataout 00101000 0
+run 200
+force -freeze sim:/temp_tb/rst 0 0
+force -freeze sim:/temp_tb/clk 0 0, 1 {50 ps} -r 100
+force -freeze sim:/temp_tb/clk 1 0
+run 200
+force -freeze sim:/temp_tb/dataout 00011110 0
+run
+# End time: 22:33:05 on Apr 26,2022, Elapsed time: 5:50:33
+# Errors: 0, Warnings: 0

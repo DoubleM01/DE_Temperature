@@ -37,36 +37,36 @@ Il10X2Z_LN3:ZQM4Q36iBX3
 R1
 R0
 w1650916478
-8leddemux.v
-Fleddemux.v
+Z4 8leddemux.v
+Z5 Fleddemux.v
 L0 1
 R2
 r1
 !s85 0
 31
 !s108 1650916486.000000
-!s107 leddemux.v|
-!s90 leddemux.v|
+Z6 !s107 leddemux.v|
+Z7 !s90 leddemux.v|
 !i113 1
 R3
 vlcd_state
-!s110 1650952944
+!s110 1650983522
 !i10b 1
 !s100 K9TecDVzzPDMYKEd?A;T73
-I<iIKO]a:BR_<z<>PzfaWY3
+IV34WoK9<<I5UNhMiE3@dB1
 R1
 R0
 w1650951769
-8LCD_state.v
-FLCD_state.v
+8lcd_state.v
+Flcd_state.v
 L0 1
 R2
 r1
 !s85 0
 31
-!s108 1650952944.000000
-!s107 LCD_state.v|
-!s90 LCD_state.v|
+!s108 1650983522.000000
+!s107 lcd_state.v|
+!s90 lcd_state.v|
 !i113 1
 R3
 vlcd_testbench
@@ -89,23 +89,84 @@ r1
 !s90 lcd_testbench.v|
 !i113 1
 R3
-vtemp
-!s110 1650914372
+vleddemux
+!s110 1650983688
 !i10b 1
-!s100 iG_U?4cKPO``lWYDAd>g11
-IjO<Bef4zoSb0IhRb:K`1]2
+!s100 1mAnb?Bl@770igGTEz?0X2
+IF>@ARHaW;KP=aJ3]YHIIg0
 R1
 R0
-w1650914371
-8temp.v
-Ftemp.v
-L0 17
+w1650943110
+R4
+R5
+L0 1
 R2
 r1
 !s85 0
 31
-!s108 1650914372.000000
+!s108 1650983688.000000
+R6
+R7
+!i113 1
+R3
+vMCP
+!s110 1650983552
+!i10b 1
+!s100 ;PcaSGCo>zGiPV:jL@Ni90
+InNV@<Xa=ENDARl9G2zHK]0
+R1
+R0
+w1650983551
+8MCP.v
+FMCP.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1650983552.000000
+!s107 MCP.v|
+!s90 MCP.v|
+!i113 1
+R3
+n@m@c@p
+vtemp
+!s110 1650984139
+!i10b 1
+!s100 M?8`b0DX9ao;:gJn9>7mz3
+I8K0Z>RN4_=OS<G5TZC1zQ2
+R1
+R0
+w1650984137
+8temp.v
+Ftemp.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1650984139.000000
 !s107 temp.v|
 !s90 temp.v|
+!i113 1
+R3
+vtemp_tb
+!s110 1650984143
+!i10b 1
+!s100 m4UgMH4PXA56OPFz5obMM0
+Inmk35gW6b5id8Q__h0ZbI1
+R1
+R0
+w1650984038
+8temp_tb.v
+Ftemp_tb.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1650984143.000000
+!s107 temp_tb.v|
+!s90 temp_tb.v|
 !i113 1
 R3

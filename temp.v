@@ -4,7 +4,7 @@ input clk;
 
 output wire  cs;
 output wire  din;
-input wire led;
+inout wire led;
 output wire r;
   output wire g;
 //output reg sclk;

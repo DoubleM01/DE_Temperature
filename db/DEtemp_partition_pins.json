@@ -1,0 +1,37 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "dataout[4]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout[5]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout[6]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout[7]",
+					"strict" : false
+				},
+				{
+					"name" : "rsf",
+					"strict" : false
+				},
+				{
+					"name" : "ef",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,70 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use ieee.numeric_std.all;
+
+
+
+entity lc is
+    Port ( clk : in  STD_LOGIC;
+        datain: in std_logic_vector(7 downto 0);
+           data : out  STD_LOGIC_VECTOR (7 downto 0);
+           rw,en,rs : out  STD_LOGIC);
+end lc;
+
+architecture Behavioral of lc is
+
+---begin
+    signal current_s  : integer:=0;
+    -- signal s1:std_logic ;
+    -- signal s2:std_logic ;
+    -- signal s3:std_logic ;
+    -- signal s4:std_logic;
+    begin
+    -- s0 <= 0;
+    
+    -- s1 <= 1;
+    -- s2 <= 2;
+    -- s3 <= 3;
+    --signal : integer;
+    ---current_s <= 0;
+    
+    
+process (clk)
+begin
+    
+    case current_s  is
+    
+        when  0=>           
+        rs <= '0';
+        rw <= '0';
+        en <= '0';
+        data <= "00000000";
+        current_s<=1;
+        --when current_s => s1
+        when  1=>           
+        rs <= '0';
+        rw <= '1';
+        en <= '0';
+        data <= "00000000";
+        current_s<=2;
+        when  2=>           
+        rs <= '0';
+        rw <= '1';
+        en <= '1';
+        data <= "00000000";
+        current_s<=3;
+        when  3 =>           
+        rs <= '1';
+        rw <= '1';
+        en <= '1';
+        data <= datain;
+        current_s<=4;
+        when others =>
+        current_s<=0;
+    end case ;
+    
+end process;
+end Behavioral;
+
+
+--clk, rst, rs, rw, en, data

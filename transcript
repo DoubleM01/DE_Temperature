@@ -1,25 +1,50 @@
-# vsim temp_tb 
-# Start time: 02:42:47 on Apr 27,2022
-# Loading work.temp_tb
-# Loading work.temp
-# Loading work.MCP
-# Loading work.leddemux
-# Loading work.lcd_state
+# vsim work.tb_bcd1 
+# Start time: 10:36:01 on Apr 30,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_bcd1(behavior)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.binary_bcd(behaviour)
 add wave  \
-sim:/temp_tb/clk \
-sim:/temp_tb/rst \
-sim:/temp_tb/led \
-sim:/temp_tb/r \
-sim:/temp_tb/g \
-sim:/temp_tb/dataout \
-sim:/temp_tb/cs \
-sim:/temp_tb/din \
-sim:/temp_tb/sclk \
-sim:/temp_tb/rs \
-sim:/temp_tb/rw \
-sim:/temp_tb/en
-force -freeze sim:/temp_tb/dataout 00010100 0
-run 100
-run50
-# invalid command name "run50"
-run 50
+sim:/tb_bcd1/clk \
+sim:/tb_bcd1/reset \
+sim:/tb_bcd1/binary_in \
+sim:/tb_bcd1/bcd0 \
+sim:/tb_bcd1/bcd1 \
+sim:/tb_bcd1/bcd2 \
+sim:/tb_bcd1/bcd3 \
+sim:/tb_bcd1/bcd4 \
+sim:/tb_bcd1/clk_period
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Mahmoud  Hostname: DOUBLEM  ProcessID: 33608
+#           Attempting to use alternate WLF file "./wlftaw4x2h".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftaw4x2h
+rub 1000
+# invalid command name "rub"
+run 1000
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_bcd1/uut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_bcd1/uut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_bcd1/uut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_bcd1/uut
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_bcd1/uut
+force -freeze sim:/tb_bcd1/binary_in 0000000000100101 0
+run 1000
+force -freeze sim:/tb_bcd1/reset 0 0
+run 10000
+force -freeze sim:/tb_bcd1/binary_in 00100101 0
+# Value length (8) does not equal array index length (16).
+# 
+# ** Error: (vsim-4011) Invalid force value: 00100101 0.
+# 
+force -freeze sim:/tb_bcd1/clk 1 0
+run 10000
+# End time: 10:39:11 on Apr 30,2022, Elapsed time: 0:03:10
+# Errors: 2, Warnings: 7

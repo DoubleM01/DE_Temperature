@@ -1,0 +1,22 @@
+
+State Machine - |DEtemp|lcd16x2_ctrl:DUT|op_state
+Name op_state.DONE op_state.WAIT_DELAY_L op_state.WAIT_HOLD_L op_state.ENABLE_L op_state.WAIT_SETUP_L op_state.WAIT_DELAY_H op_state.WAIT_HOLD_H op_state.ENABLE_H op_state.WAIT_SETUP_H op_state.IDLE 
+op_state.IDLE 0 0 0 0 0 0 0 0 0 0 
+op_state.WAIT_SETUP_H 0 0 0 0 0 0 0 0 1 1 
+op_state.ENABLE_H 0 0 0 0 0 0 0 1 0 1 
+op_state.WAIT_HOLD_H 0 0 0 0 0 0 1 0 0 1 
+op_state.WAIT_DELAY_H 0 0 0 0 0 1 0 0 0 1 
+op_state.WAIT_SETUP_L 0 0 0 0 1 0 0 0 0 1 
+op_state.ENABLE_L 0 0 0 1 0 0 0 0 0 1 
+op_state.WAIT_HOLD_L 0 0 1 0 0 0 0 0 0 1 
+op_state.WAIT_DELAY_L 0 1 0 0 0 0 0 0 0 1 
+op_state.DONE 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |DEtemp|lcd16x2_ctrl:DUT|state
+Name state.WRITE_LINE2 state.SELECT_LINE2 state.WRITE_LINE1 state.SELECT_LINE1 state.CONFIG state.RESET 
+state.RESET 0 0 0 0 0 0 
+state.CONFIG 0 0 0 0 1 1 
+state.SELECT_LINE1 0 0 0 1 0 1 
+state.WRITE_LINE1 0 0 1 0 0 1 
+state.SELECT_LINE2 0 1 0 0 0 1 
+state.WRITE_LINE2 1 0 0 0 0 1 
